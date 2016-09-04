@@ -3,13 +3,13 @@
 Detects files which have BOMB (byte order mark bytes) as UTF-8 encoded text.
 
     # Install
-    $ go install github.com/koron/detect-bomb
+    $ go install github.com/koron/detectbomb
 
     # How to run
-    $ cd $GOPATH/github.com/koron/detect-bomb
+    $ cd $GOPATH/github.com/koron/detectbomb
     $ ls testdata
     bomb.txt  nobomb.txt
 
-    $ detect-bomb
+    $ detectbomb
     BOMB: testdata/bomb.txt
     $
