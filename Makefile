@@ -1,5 +1,5 @@
 PROJECT=detectbomb
-VERSION=v0.1
+VERSION=v0.1.1
 
 GOVERSION=$(shell go version)
 GOOS=$(word 1,$(subst /, ,$(lastword $(GOVERSION))))

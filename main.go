@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	version  = "v0.1"
+	version  = "v0.1.1"
 	excludes = []string{
 		".jekyll-metadata",
 		".sass-cache",
@@ -39,9 +39,9 @@ func hasBomb(path string) bool {
 
 func main() {
 	verbose := flag.Bool("verbose", false, "verbose messages")
-	version := flag.Bool("version", false, "show version number")
+	versionFlag := flag.Bool("version", false, "show version number")
 	flag.Parse()
-	if *version {
+	if *versionFlag {
 		fmt.Printf("detectbomb version %s\n", version)
 		os.Exit(1)
 	}

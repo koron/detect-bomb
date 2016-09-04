@@ -1,5 +1,7 @@
 # Detect BOMB
 
+[![CircleCI](https://circleci.com/gh/koron/detectbomb.svg?style=svg)](https://circleci.com/gh/koron/detectbomb)
+
 Detects files which have BOMB (byte order mark bytes) as UTF-8 encoded text.
 
     # Install
