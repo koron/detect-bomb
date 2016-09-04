@@ -1,4 +1,4 @@
-# detect BOMB
+# Detect BOMB
 
 Detects files which have BOMB (byte order mark bytes) as UTF-8 encoded text.
 
