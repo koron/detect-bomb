@@ -7,5 +7,9 @@ Detects files which have BOMB (byte order mark bytes) as UTF-8 encoded text.
 
     # How to run
     $ cd $GOPATH/github.com/koron/detect-bomb
+    $ ls testdata
+    bomb.txt  nobomb.txt
+
     $ detect-bomb
     BOMB: testdata/bomb.txt
+    $
