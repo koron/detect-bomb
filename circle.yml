@@ -1,0 +1,6 @@
+test:
+  pre:
+    - go version
+  post:
+    - make release-all
+    - cp tmp/*.tar.gz tmp/$(CIRCLE_ARTIFACTS)
