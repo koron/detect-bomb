@@ -1,6 +1,8 @@
-test:
-  pre:
+dependencies:
+  post:
     - go version
+    - go env
+test:
   post:
     - make release-all
-    - cp tmp/*.tar.gz tmp/$(CIRCLE_ARTIFACTS)
+    - mv tmp/*.tar.gz $CIRCLE_ARTIFACTS
